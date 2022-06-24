@@ -183,40 +183,6 @@ width:100%;
     					<header>
 				<h1>Meet Dr. Nemani</h1>				<p><img src="./nemani-headshot.png" align="right" style="padding-left: 15px;">Dr. Sajjan K. Nemani is a Neurologist with specialization in Neurophysiology and Sleep Medicine. He has brought together team of dedicated, skilled healthcare professionals at Advanced Sleep and Neurodiagnostic Services to provide you with quality care. At our sleep labs and offices, we offer a wide range of services. We offer general neurology consultation and neurophysiological testing, including EEGs, EMGs, Nerve conduction studies, Evoked potentials, and Video-Electronystagmography. At our sleep clinics we offer sleep disorder services, including in-lab sleep testing, CPAP Titration and management, multiple sleep latency tests, and home sleep testing (HST). With a number of locations across the Southern Illinois area, we are here to help.<br><br>
 						Make an appointment: <a href="tel:6185338700">618-533-8700</a></p>			</header>
-                	<script type="text/javascript">
-                	  document.addEventListener('DOMContentLoaded', function() {
-                	  	var URL = "1nRybMMbwvpbN4pUdfV8PAEhJxQeQD6mTpYJQB7nICsE"
-                	  	Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
-                	  })
-                	  function showInfo(data) {
-                	    var html = Sheetsee.ich.photogrid({'rows': data})
-                	    $('#photogrid').html(html)
-                	    var optionsJSON = ["metric"]
-                	      $('#photogrid a.talk-link').each(function() {
-                	          if($(this).attr('href') === '' || $(this).text() === 'N/A') {
-                	              $(this).addClass("disabled");
-                	          }
-                		  });
-                	     }			
-                	</script>
-
-			    <h1 style="text-align: center;">Locations</h1>
-                <div id="photogrid"></div>
-				<script id="photogrid" type="text/html">
-                    <ul class="products">
-                        {{#rows}}
-			                <li class="product col col4">                  
-                                <div class="product-details">
-						            <h3>{{office}}</h3>
-                                    <p><strong>Address:</strong> {{address}}
-                                        <br/><Strong>Services: </strong> {{services}}    
-                                        <br/><strong>Contact: </strong> <a href="tel:+{{contact}}">  {{contact}}</a>         
-					            </div><!--/.product-details-->
-	
-				            </li>
-                        {{/rows}}
-			        </ul><!--/.featured-1-->
-</script>
 		</div><!--/.section-wrapper-->
 
 	</div><!--/.col-full-->
